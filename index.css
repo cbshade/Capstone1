@@ -8,9 +8,8 @@
     background-image: url("mountain-jumbotron.jpg");
     background-size:cover;
     min-height: 500px;
-    text-emphasis-color: white;
-    text-decoration-color: white;
     color:white;
+    background-position: center;
 }
 
 .trip{
