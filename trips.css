@@ -1,5 +1,25 @@
 #custom-trip {
     text-align: left;
     font-style: italic;
-    
+}
+
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.column {
+    flex: 25%;
+    flex-shrink: 1;
+    flex-basis: 0;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.trip_pic {
+    max-width:250px;
+    height: auto;
 }
