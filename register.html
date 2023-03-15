@@ -14,41 +14,105 @@
 </head>
 
 <body>
-    <!-- Menu -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="index.html">
-                    <img src="logo.png" alt="Couloir Classes Logo" height="50">
-                </a>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="logo.png" alt="Couloir Classes Logo" height="50">
+                    </a>
+                </div>
+
+                <!-- Toggler/collapsibe Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="trips.html">Trips</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="register.html">Register</a></li>
+                        <li class="nav-item"><a class="nav-link" href="login.html">Log In</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+                    </ul>
+                </div>
             </div>
+        </nav>
+    </header>
 
-            <!-- Toggler/collapsibe Button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <main class="container">
+        <h1>Contact Us</h1>
+        <form action="contact.html" method="POST" enctype="application/x-www-form-urlencoded">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <p>
+                    <label for="nameField">*Your name: </label>
+                    <input id="nameField" type="text" required minlength="10" maxlength="75" name="customerName">
+                </p>
+                <p>
+                    <label for="customerEmail">Your email: </label>
+                    <input type="email" name="customerEmail" id="customerEmail">
+                </p>
+                <p><label for="customerPhone">Your phone: </label>
+                    <input type="tel" pattern="\(\d{3}\) \d{3}-\d{4}" name="customerPhone" id="customerPhone">
+                </p>
+                <p>
+                    <label>Phone type: </label>
+                </p>
 
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="trips.html">Trips</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="register.html">Register</a></li>
-                    <li class="nav-item"><a class="nav-link" href="login.html">Log In</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- Menu End -->
+                <label><input type="radio" name="phoneType" value="cell">Cell</label>
+                <label><input type="radio" name="phoneType" value="work">Work</label>
+                <label><input type="radio" name="phoneType" value="home">Home</label>
+                <p>
+                    Ok to contact me:
+                    <label><input type="checkbox" name="okToContact" value="phone"> by phone</label>
+                    <label><input type="checkbox" name="okToContact" value="email"> by email</label>
 
-    <!-- Core -->
+                </p>
+            </fieldset>
 
-    <!-- Core End -->
+            <input type="hidden" name="source" value="ContactForm">
+            <fieldset>
+                <legend>Feedback</legend>
+                <p>
+                    <textarea required tabindex="1" name="feedbackText" cols="40" rows="3"></textarea>
+                </p>
+                <p>
+                    <label for="feedbackType">Feedback type: </label><select tabindex="2" name="feedbackType"
+                        multiple="multiple" size="6" id="feedbackType">
+                        <optgroup label="Stores">
+                            <option value="webstore">Web Store</option>
+                            <option value="store">Physical Store</option>
+                        </optgroup>
+                        <option value="webtech">Website Issue</option>
+                        <option value="general">General Feedback</option>
+                    </select>
+                </p>
 
-    <!-- Footer -->
+                <p><label for="severityRange">Severity: </label>
+                    <input tabindex="3" type="range" min="1" max="10" name="severityRange" id="severityRange">
+                </p>
+                <p><label for="severity">Severity: </label>
+                    <input tabindex="4" type="number" min="1" max="10" name="severity" id="severity"></label>
+                </p>
+                <p>
+                    <label for="issueDate">Issue date: </label>
+                    <input tabindex="5" type="date" name="issueDate" id="issueDate">
+                </p>
+                <p>
+                    <label for="issueTime">Issue time: </label>
+                    <input tabindex="6" type="time" name="issueTime" id="issueTime">
+                </p>
+
+            </fieldset>
+            <input type="submit" value="SendContact">
+        </form>
+    </main>
+
     <footer class="text-center text-lg-start bg-light text-muted">
 
-        <section class="">
+        <section>
             <div class="container text-center text-md-start mt-5">
 
                 <div class="row mt-3">
@@ -63,7 +127,7 @@
                         </p>
                     </div>
 
-                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <nav class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
 
                         <h6 class="text-uppercase fw-bold mb-4">
                             Links
@@ -83,18 +147,21 @@
                         <p>
                             <a href="register.html" class="text-reset">Register</a>
                         </p>
-                    </div>
+                    </nav>
 
                     <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
 
                         <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-                        <p><i class="fas fa-home me-3"></i>1001 4th Ave. </br> Seattle, WA 98154, US</p>
-                        <p>
-                            <i class="fas fa-envelope me-3"></i>
-                            info@example.com
-                        </p>
-                        <p><i class="fas fa-phone me-3"></i> + 01 555 567 88</p>
-                        <p><i class="fas fa-print me-3"></i> + 01 555 567 89</p>
+                        <address>
+                            <p><i class="fas fa-home me-3"></i>1001 4th Ave. </br> Seattle, WA 98154, US</p>
+
+                            <p>
+                                <i class="fas fa-envelope me-3"></i>
+                                <a href="mailto:info@example.com">info@example.com</a>
+                            </p>
+                            <p><i class="fas fa-phone me-3"></i><a href="tel:0155556788">+ 01 555 567 88</a></p>
+                            <p><i class="fas fa-print me-3"></i><a href="tel:0155556789"> + 01 555 567 89</a></p>
+                        </address>
                     </div>
 
                 </div>
@@ -102,15 +169,12 @@
             </div>
         </section>
 
-
-
         <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
             © 2023 Copyright:
             <a class="text-reset fw-bold">Couloir Classes</a>
         </div>
 
     </footer>
-    <!-- Footer End -->
 </body>
 
 </html>
