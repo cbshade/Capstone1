@@ -14,85 +14,79 @@
 </head>
 
 <body>
-    <!-- Menu -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="index.html">
-                    <img src="logo.png" alt="Couloir Classes Logo" height="50">
-                </a>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="logo.png" alt="Couloir Classes Logo" height="50">
+                    </a>
+                </div>
+
+                <!-- Toggler/collapsibe Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="trips.html">Trips</a></li>
+                        <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+                        <li class="nav-item"><a class="nav-link" href="login.html">Log In</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="contact-us.html">Contact Us</a></li>
+                    </ul>
+                </div>
             </div>
+        </nav>
+    </header>
 
-            <!-- Toggler/collapsibe Button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <main>
+        <section class="container">
+            <h1>Contact Us</h1>
+            <p>Couloir Class is a mountain guide service that operates year-round in the Pacific Northwest and beyond.
+                Whether you want to explore the backcountry terrain of the Cascades, ski mountaineer on remote glaciers,
+                or
+                climb some of the most challenging peaks in the world, we have a trip for you.</p>
+            <p>Drop us a line or come to our store and visit!</p>
+        </section>
 
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="trips.html">Trips</a></li>
-                    <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
-                    <li class="nav-item"><a class="nav-link" href="login.html">Log In</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="contact-us.html">Contact Us</a></li>
-                </ul>
+        <section class="container">
+            <div class="d-flex flex-row justify-content-center">
+                <div class="p-2"><img class="img-fluid rounded storefront"
+                        src="https://uploads-ssl.webflow.com/5d771c745b323332ec858bf6/60f712a5eba1e2188cc5de7f_madison-river-lodge.jpg"
+                        alt="Couloir Class's storefront">
+                </div>
             </div>
-        </div>
-    </nav>
-    <!-- Menu End -->
+        </section>
 
-    <!-- Core -->
-    <div class="container">
-        <h1>Contact Us</h1>
-        <p>Couloir Class is a mountain guide service that operates year-round in the Pacific Northwest and beyond.
-            Whether you want to explore the backcountry terrain of the Cascades, ski mountaineer on remote glaciers, or
-            climb some of the most challenging peaks in the world, we have a trip for you.</p>
-        <p>Drop us a line or come to our store and visit!</p>
-    </div>
-
-    <div class="container">
-        <!-- Storefront Photo -->
-        <div class="d-flex flex-row justify-content-center">
-            <div class="p-2"><img class="img-fluid rounded storefront"
-                    src="https://uploads-ssl.webflow.com/5d771c745b323332ec858bf6/60f712a5eba1e2188cc5de7f_madison-river-lodge.jpg"
-                    alt="Couloir Class's storefront">
+        <section class="container">
+            <div class="row">
+                <div class="column" id="column1">
+                    <h2>Information</h2>
+                    <p>Phone: + 01 555 567 2388</p>
+                    <p>Fax: + 01 555 567 2389</p>
+                    <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+                    <p>Twitter: <a href="https://www.twitter.com">@couloirclasses</a></p>
+                    <p>Instagram: <a href="https://www.instragram.com">@couloirclasses</a></p>
+                </div>
+                <div class="column" id="column2">
+                    <h2>Store</h2>
+                    <p>1001 4th Ave. </br> Seattle, WA 98154, US</p>
+                    <iframe id="map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2690.028510633942!2d-122.33605018516593!3d47.60613529600461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906ab1167069f7%3A0x91b2d75095639645!2sSafeco%20Plaza%2C%201001%204th%20Ave%2C%20Seattle%2C%20WA%2098154!5e0!3m2!1sen!2sus!4v1678819096275!5m2!1sen!2sus"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" title="Embedded Google Map">
+                    </iframe>
+                </div>
             </div>
-        </div>
-        <!-- Storefront Photo End -->
-    </div>
-
-
-    <!-- Attempt 21 -->
-
-    <div class="container">
-        <div class="row">
-            <div class="column" id="column1">
-                <h2>Information</h2>
-                <p>Phone: + 01 555 567 88</p>
-                <p>Fax: + 01 555 567 89</p>
-                <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
-                <p>Twitter: <a href="https://www.twitter.com">@couloirclasses</a></p>
-                <p>Instagram: <a href="https://www.instragram.com">@couloirclasses</a></p>
-            </div>
-            <div class="column" id="column2">
-                <h2>Store</h2>
-                <p>1001 4th Ave. </br> Seattle, WA 98154, US</p>
-                <iframe id="map"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2690.028510633942!2d-122.33605018516593!3d47.60613529600461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906ab1167069f7%3A0x91b2d75095639645!2sSafeco%20Plaza%2C%201001%204th%20Ave%2C%20Seattle%2C%20WA%2098154!5e0!3m2!1sen!2sus!4v1678819096275!5m2!1sen!2sus"
-                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade" title="Embedded Google Map">
-                </iframe>
-
-            </div>
-        </div>
-    </div>
-    <!-- Attempt 21 End-->
-    <!-- Core End -->
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer class="text-center text-lg-start bg-light text-muted">
 
-        <section class="">
+        <section>
             <div class="container text-center text-md-start mt-5">
 
                 <div class="row mt-3">
@@ -107,7 +101,7 @@
                         </p>
                     </div>
 
-                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <nav class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
 
                         <h6 class="text-uppercase fw-bold mb-4">
                             Links
@@ -127,18 +121,21 @@
                         <p>
                             <a href="register.html" class="text-reset">Register</a>
                         </p>
-                    </div>
+                    </nav>
 
                     <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
 
                         <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-                        <p><i class="fas fa-home me-3"></i>1001 4th Ave. </br> Seattle, WA 98154, US</p>
-                        <p>
-                            <i class="fas fa-envelope me-3"></i>
-                            info@example.com
-                        </p>
-                        <p><i class="fas fa-phone me-3"></i> + 01 555 567 88</p>
-                        <p><i class="fas fa-print me-3"></i> + 01 555 567 89</p>
+                        <address>
+                            <p><i class="fas fa-home me-3"></i>1001 4th Ave. </br> Seattle, WA 98154, US</p>
+
+                            <p>
+                                <i class="fas fa-envelope me-3"></i>
+                                <a href="mailto:info@example.com">info@example.com</a>
+                            </p>
+                            <p><i class="fas fa-phone me-3"></i><a href="tel:0155556788">+ 01 555 567 88</a></p>
+                            <p><i class="fas fa-print me-3"></i><a href="tel:0155556789"> + 01 555 567 89</a></p>
+                        </address>
                     </div>
 
                 </div>

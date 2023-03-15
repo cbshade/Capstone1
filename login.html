@@ -14,63 +14,61 @@
 </head>
 
 <body>
-    <!-- Menu -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="index.html">
-                    <img src="logo.png" alt="Couloir Classes Logo" height="50">
-                </a>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="logo.png" alt="Couloir Classes Logo" height="50">
+                    </a>
+                </div>
+
+                <!-- Toggler/collapsibe Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="trips.html">Trips</a></li>
+                        <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="login.html">Log In</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+                    </ul>
+                </div>
             </div>
+        </nav>
+    </header>>
 
-            <!-- Toggler/collapsibe Button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="trips.html">Trips</a></li>
-                    <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="login.html">Log In</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- Menu End -->
-
-    <!-- Core -->
-    <div class="container">
-    <h1>Log In</h1>
-    <p>Please log in to view or modify any existing reservations and view your itinerary.</p>
+    <main>
+        <section class="container">
+            <h1>Log In</h1>
+            <p>Please log in to view or modify any existing reservations and view your itinerary.</p>
 
 
-        <form>
-            <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                    placeholder="Enter email">
-            </div>
-            <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-            </div>
-            <div class="form-group form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Remember me</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Log In</button>
-        </form>
-    </div>
+            <form>
+                <div class="form-group">
+                    <label for="username">Email address</label>
+                    <input type="email" class="form-control" id="username" aria-describedby="enter your email address for your username"
+                        placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password">
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="remember-me">
+                    <label class="form-check-label" for="remember-me">Remember me</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Log In</button>
+            </form>
+        </section>
+    </main>
 
-    <!-- Core End -->
-
-    <!-- Footer -->
     <footer class="text-center text-lg-start bg-light text-muted">
 
-        <section class="">
+        <section>
             <div class="container text-center text-md-start mt-5">
 
                 <div class="row mt-3">
@@ -85,7 +83,7 @@
                         </p>
                     </div>
 
-                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <nav class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
 
                         <h6 class="text-uppercase fw-bold mb-4">
                             Links
@@ -105,18 +103,21 @@
                         <p>
                             <a href="register.html" class="text-reset">Register</a>
                         </p>
-                    </div>
+                    </nav>
 
                     <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
 
                         <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-                        <p><i class="fas fa-home me-3"></i>1001 4th Ave. </br> Seattle, WA 98154, US</p>
-                        <p>
-                            <i class="fas fa-envelope me-3"></i>
-                            info@example.com
-                        </p>
-                        <p><i class="fas fa-phone me-3"></i> + 01 555 567 88</p>
-                        <p><i class="fas fa-print me-3"></i> + 01 555 567 89</p>
+                        <address>
+                            <p><i class="fas fa-home me-3"></i>1001 4th Ave. </br> Seattle, WA 98154, US</p>
+
+                            <p>
+                                <i class="fas fa-envelope me-3"></i>
+                                <a href="mailto:info@example.com">info@example.com</a>
+                            </p>
+                            <p><i class="fas fa-phone me-3"></i><a href="tel:0155556788">+ 01 555 567 88</a></p>
+                            <p><i class="fas fa-print me-3"></i><a href="tel:0155556789"> + 01 555 567 89</a></p>
+                        </address>
                     </div>
 
                 </div>
@@ -124,15 +125,12 @@
             </div>
         </section>
 
-
-
         <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
             © 2023 Copyright:
             <a class="text-reset fw-bold">Couloir Classes</a>
         </div>
 
     </footer>
-    <!-- Footer End -->
 </body>
 
 </html>
