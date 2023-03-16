@@ -28,7 +28,9 @@ Your website should also include the following HTML elements and other features:
  * at least one field with the type of password
    * [Link to site.](https://cbshade.github.io/Capstone1/login.html) 
  * at least one properly formated select element
+  * [Link to site.](https://cbshade.github.io/Capstone1/register.html)
  * at least one type HTML5 validation
+  * [Link to site.](https://cbshade.github.io/Capstone1/register.html)
 * You must include images on your site
  * [Link to site.](https://cbshade.github.io/Capstone1/index.html)
 * At least 1 properly formated HTML list
@@ -43,5 +45,6 @@ Your website should also include the following HTML elements and other features:
 #### Other Requirements
 * Your repository must contain appropriate the git commit history
 * Typically a commit for each meaningful piece of work completed
+ * [Link to site.](https://github.com/cbshade/Capstone1/commits/master)
 * Maintain a project board outlining and prioritizing the user stories and tasks needed to create your minimum viable product (MVP)
- *  * [Link to site.](https://cbshade.github.io/Capstone1/project-board.xlsx)
+ *  [Link to site.](https://cbshade.github.io/Capstone1/project-board.xlsx)
