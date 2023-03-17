@@ -51,3 +51,20 @@
   display: flex;
   max-width: 600px;
 }
+
+
+footer section p a {
+  color: hsl(0, 0%,40%);
+}
+
+footer section {
+  color: hsl(0, 0%,40%);
+}
+
+.text-uppercase {
+  color: hsl(0, 0%,40%);
+}
+
+a{
+  color: hsl(210, 11%, 15%);
+}

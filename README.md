@@ -28,7 +28,7 @@ Your website should also include the following HTML elements and other features:
  * at least one field with the type of password
    * [Link to site.](https://cbshade.github.io/Capstone1/login.html) 
  * at least one properly formated select element
-  * [Link to site.](https://cbshade.github.io/Capstone1/register.html)
+    * [Link to site.](https://cbshade.github.io/Capstone1/register.html)
  * at least one type HTML5 validation
   * [Link to site.](https://cbshade.github.io/Capstone1/register.html)
 * You must include images on your site

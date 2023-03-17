@@ -23,3 +23,16 @@
     max-width:250px;
     height: auto;
 }
+
+
+footer section p a {
+    color: hsl(0, 0%,40%);
+}
+
+footer section {
+    color: hsl(0, 0%,40%);
+}
+
+.text-uppercase {
+    color: hsl(0, 0%,40%);
+}
